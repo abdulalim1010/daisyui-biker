@@ -9,11 +9,23 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'bike-primary': '#264653',
+          }
+        }
+      }
+    }
+  </script>
 
 </head>
 
 <body>
-  <header class="bg-green-600">
+  <header class="bg-bike-primary">
     <nav>
       <div class="navbar bg-base">
         <div class="navbar-start">
@@ -25,13 +37,11 @@
               </svg>
             </div>
             <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a></a></li>
-              <li>
-                <a></a>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
+
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
               </li>
               <li><a>Item 3</a></li>
             </ul>
@@ -40,12 +50,12 @@
         </div>
         <div class=" hidden lg:flex justify-end">
           <ul class="menu menu-horizontal px-1">
-            <li><a>Home</a></li>
-            <li>
+            <li class="text-white"><a>Home</a></li>
+            <li class="text-white">
               <summary>Parent</summary>
             </li>
-            <li><a>shope</a></li>
-            <li><a>about</a></li>
+            <li class="text-white"><a>shope</a></li>
+            <li class="text-white"><a>about</a></li>
           </ul>
         </div>
         <div class="navbar-center">
@@ -135,7 +145,7 @@
       </div>
     </section>
     <section class="lg:flex justify-center  space-y-5 gap-6 mb-8">
-      <div class="w-80 border rounded space-y-3 p-5">
+      <div class="w-80 border rounded space-y-3 p-5 mt-5">
         <img src="images/others/user-1.png" alt="">
         <p>Slate helps you see how
           many more days you need
@@ -144,7 +154,7 @@
         <h5 class="text-2xl text-blue-500">Regina Miles</h5>
         <h4 class="text-2xl">Bankar</h4>
       </div>
-      <div class="w-80 border rounded space-y-3  p-5">
+      <div class="w-80 border rounded space-y-3 p-5  ">
         <img src="images/others/user-2.png" alt="">
         <p>Slate helps you see how
           many more days you need
@@ -153,7 +163,7 @@
         <h5 class="text-2xl text-blue-500">Regina Miles</h5>
         <h4 class="text-2xl">Bankar</h4>
       </div>
-      <div class="w-80 border rounded space-y-3  p-5">
+      <div class="w-80 border rounded space-y-3 p-5  ">
         <img src="images/others/user-3.png" alt="">
         <p>Slate helps you see how
           many more days you need
@@ -169,7 +179,7 @@
       </div>
     </section>
     <h1 class="text-5xl text-center font-bold mb-5">Frequently Asked <span class="text-red-500">Questions</span></h1>
-    <section class="lg:flex justify-center items-center lg:ml-52 ">
+    <section class="lg:flex justify-center  ">
       <div>
         <img src="images/others/faq.png" alt="">
       </div>
